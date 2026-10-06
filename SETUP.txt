@@ -1,0 +1,28 @@
+KAVIYA PORTFOLIO — LOCAL FULL-STACK SETUP
+
+IMPORTANT
+Do not open public/index.html with a double-click for normal use.
+Run the Node.js server and open the portfolio through http://localhost:5000.
+
+1. Make sure Node.js is installed.
+2. Make sure MongoDB is running locally, OR use a MongoDB Atlas connection string.
+3. Copy .env.example to .env.
+4. Put your MongoDB connection string in MONGODB_URI.
+5. Open a terminal in this folder.
+6. Run: npm install
+7. Run: npm start
+8. Open: http://localhost:5000
+9. Test API: http://localhost:5000/api/health
+
+CONTACT FORM
+The Contact form sends: POST /api/contact
+and saves the submission to MongoDB.
+
+If you open the HTML file directly, the form is configured to show a clear
+server-connection message instead of the generic browser “Failed to fetch”
+error. The recommended method is still http://localhost:5000.
+
+PRODUCTION
+Deploy this Node/Express project to Render or Railway and use MongoDB Atlas.
+If the frontend and backend are hosted separately, set window.PORTFOLIO_API_URL
+in public/index.html to the public backend URL.
